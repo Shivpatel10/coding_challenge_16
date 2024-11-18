@@ -16,6 +16,7 @@ function ProductList() { //Created an un orded list from my array above
       <h2> Product List</h2>
       <ul>
           {products.map(product => (
+            //Task 5: gave each product a unique key prop using the id
               <li key={product.id} > 
                      <ProductItem product={product} />
               </li>
