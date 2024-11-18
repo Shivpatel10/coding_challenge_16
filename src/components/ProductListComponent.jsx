@@ -1,4 +1,6 @@
-//import React from 'react';
+// Task 3: Create the ProductList Component
+import ProductItem from './ProductItem.jsx';
+
 
 const products = [
     {id: 1, name: 'IPhone', price: 1000 , description: "A compact handheld device to used to communicate over long distances and complete daily tasks."},
@@ -15,7 +17,7 @@ function ProductList() { //Created an un orded list from my array above
       <ul>
           {products.map(product => (
               <li key={product.id} > 
-                    {product.name} - ${product.price}
+                     <ProductItem product={product} />
               </li>
           ))}
       </ul>
